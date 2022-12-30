@@ -9,7 +9,7 @@ class Employee{
          System.out.println("Enter salaty:");
         salary=sc.nextInt();
          System.out.println("Enter Name:");
-        name=sc.nextLine();
+        name=sc.next();
     }
     void displayData(){
         System.out.println("Emp id is:"+id);
@@ -18,16 +18,16 @@ class Employee{
         
     }
 }
-class Company{
+class Main{
     public static void main(String args[]){
-        Company c[]=new Company[2];
+        Employee c[]=new Employee[2];
         for(int i=0;i<2;i++){
-            Employee v=new Employee();
-            v.getData();
+            c[i] =new Employee();
+            c[i].getData();
         
-        }
+     }   
     for(int i=0;i<2;i++){
-        v.displayData();
+        c[i].displayData();
     }
     }
 }
